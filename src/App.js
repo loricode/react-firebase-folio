@@ -51,14 +51,15 @@ class App extends Component {
           <thead>
             <tr>
               <th scope="col"><img src={logo} className="App-logo" alt="logo" /></th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Codigo</th>
+              <th scope="col">Ciudad</th>
+              <th scope="col">Email</th>
             </tr>
           </thead>
           <tbody>
-            {listaFolios.map(folio => (
+            {listaFolios.map((folio, index) => (
                <tr key={folio.id}>
+                 <td>{index+1}</td>
                  <td>{folio.codigo}</td>
                  <td>{folio.ciudad}</td>
                  <td>{folio.email}</td>
